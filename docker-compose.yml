@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  jenkins-docker:
+    image: jenkins-docker
+    container_name: jenkins-docker-lts
+    build: .
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 8080:8080
+      - 50000:50000

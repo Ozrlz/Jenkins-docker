@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  jenkins-docker:
+    image: jenkins-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
